@@ -1,0 +1,152 @@
+/* ---------- الخطوط الأساسية ---------- */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e0f0ff, #f0f4f8);
+  color: #333;
+}
+
+/* ---------- الهيدر ---------- */
+header .header-bg {
+  background: linear-gradient(135deg, #007bff, #00aaff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffd700;
+}
+
+/* ---------- الأقسام المركزية ---------- */
+.section-center {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-center img {
+  margin-bottom: 15px;
+}
+
+/* ---------- قسم الخدمات ---------- */
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.service img {
+  width: 90px;
+  margin-bottom: 12px;
+}
+
+/* ---------- نموذج التواصل ---------- */
+#contact form {
+  max-width: 550px;
+  margin: auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#contact button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+
+.success-msg {
+  display: none;
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+/* ---------- الفوتر ---------- */
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* ---------- تصميم متجاوب ---------- */
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 90%;
+  }
+}
