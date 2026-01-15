@@ -1,12 +1,6 @@
-const contactForm = document.getElementById('contactForm');
-const formMessage = document.getElementById('formMessage');
+const form = document.querySelector(".contact-form");
+const formMessage = document.getElementById("formMessage");
 
-contactForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-  formMessage.style.display = 'block';
-  contactForm.reset();
-
-  setTimeout(() => {
-    formMessage.style.display = 'none';
-  }, 3000);
+form.addEventListener("submit", function(e){
+    formMessage.style.display = "block";
 });

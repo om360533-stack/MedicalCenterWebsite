@@ -1,193 +1,134 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>راديولوجي إسكان | مركز أشعة وتحاليل</title>
-
-  <meta name="description" content="مركز راديولوجي إسكان يقدم خدمات الأشعة والتحاليل الطبية بأحدث الأجهزة ودقة عالية في المقطم.">
-  <meta name="keywords" content="راديولوجي, أشعة, تحاليل, مركز أشعة, المقطم">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google verification -->
-  <meta name="google-site-verification" content="1WvH5DLdddx65jgMFVSDlOAHeiaSL8sn0ACVcZ6GK78" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-    }
-
-    header {
-      background: #0d6efd;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    section {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #0d6efd;
-      margin-top: 0;
-    }
-
-    .services div {
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #eee;
-    }
-
-    input, textarea, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      font-size: 14px;
-    }
-
-    button {
-      background: #0d6efd;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background: #0b5ed7;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-
-    /* زر واتساب */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background: #25D366;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 8px;
-    }
-  </style>
+  <title>راديولوجي إسكان</title>
+  <meta name="description" content="مركز راديولوجي إسكان يقدم أفضل خدمات الأشعة والتحاليل المنزلية والطبية بدقة وسرعة عالية.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>راديولوجي إسكان</h1>
-  <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#services">الخدمات</a>
-    <a href="#contact">تواصل معنا</a>
-  </nav>
-</header>
+  <!-- الهيدر -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="راديولوجي إسكان">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-
-  <section id="home">
-    <h2>أهلاً بك في مركز راديولوجي إسكان</h2>
-    <p>
-      نقدم أفضل خدمات الأشعة والتحاليل الطبية  
-      بأحدث الأجهزة ودقة عالية وسرعة في النتائج.
-    </p>
-
-    <p>📍 العنوان: المقطم – الهضبة الوسطى – شارع هادي جوهر</p>
-    <p>📞 01100638958 – 01559314442 – +20 11 48189307</p>
-    <p>🟢 واتساب: 01203473601</p>
+  <!-- واجهة الموقع -->
+  <section id="hero">
+    <img src="images/hero.jpg" alt="واجهة راديولوجي إسكان" class="hero-img">
+    <div class="hero-text">
+      <h1>أهلاً بك في مركز راديولوجي إسكان</h1>
+      <p>نقدم أفضل خدمات الأشعة والتحاليل الطبية بدقة وسرعة عالية.</p>
+    </div>
   </section>
 
+  <!-- الخدمات -->
   <section id="services">
     <h2>خدماتنا</h2>
-
-    <div class="services">
-      <div>
-        <h3>الأشعة العامة</h3>
-        <p>أشعة X-Ray بأحدث الأجهزة ونتائج دقيقة.</p>
+    <div class="service-list">
+      <div class="service">
+        <img src="images/xray.png" alt="أشعة X-Ray">
+        <h3>أشعة X-Ray لجميع أجزاء الجسم 🩻</h3>
+        <p>أحدث أجهزة الأشعة مع نتائج دقيقة وسريعة.</p>
       </div>
-
-      <div>
-        <h3>الأشعة المقطعية</h3>
-        <p>فحوصات مقطعية متقدمة لتشخيص أدق.</p>
+      <div class="service">
+        <img src="images/ultrasound.png" alt="سونار">
+        <h3>موجات صوتية (سونار) على جميع أجزاء الجسم 🔊</h3>
+        <p>فحص دقيق باستخدام تقنيات الموجات فوق الصوتية.</p>
       </div>
-
-      <div>
-        <h3>تحاليل مخبرية</h3>
-        <p>تحاليل طبية شاملة بنتائج موثوقة.</p>
+      <div class="service">
+        <img src="images/doppler.png" alt="Doppler">
+        <h3>Doppler للأوردة والشرايين 💓</h3>
+        <p>تحليل دقيق لحركة الدم في الأوردة والشرايين.</p>
+      </div>
+      <div class="service">
+        <img src="images/echo.png" alt="Echo">
+        <h3>Echo على القلب ❤️</h3>
+        <p>فحص شامل لوظائف القلب بدقة عالية.</p>
+      </div>
+      <div class="service">
+        <img src="images/ecg.png" alt="ECG">
+        <h3>رسم قلب ECG 💓</h3>
+        <p>رسم دقيق لنشاط القلب.</p>
+      </div>
+      <div class="service">
+        <img src="images/eeg.png" alt="EEG">
+        <h3>رسم مخ EEG 🧠</h3>
+        <p>تحليل نشاط الدماغ بدقة.</p>
+      </div>
+      <div class="service">
+        <img src="images/holter.png" alt="Holter">
+        <h3>تركيب Holter ⏱️</h3>
+        <p>مراقبة قلبية مستمرة لفترة 24 ساعة.</p>
+      </div>
+      <div class="service">
+        <img src="images/lab.png" alt="تحاليل منزلية">
+        <h3>سحب عينات وتحاليل منزلية 🧪</h3>
+        <p>تحاليل منزلية دقيقة ومريحة.</p>
+      </div>
+      <div class="service">
+        <img src="images/nursing.png" alt="تمريض منزلي">
+        <h3>التمريض المنزلي 🏥</h3>
+        <p>رعاية منزلية محترفة ومتكاملة.</p>
+      </div>
+      <div class="service">
+        <img src="images/home-visit.png" alt="زيارة منزلية">
+        <h3>زيارة منزلية وعلاج طبيعي 🏡💪</h3>
+        <p>خدمة منزلية مخصصة لكل احتياجاتك.</p>
+      </div>
+      <div class="service">
+        <img src="images/doctor-visit.png" alt="كشف منزلي">
+        <h3>كشف منزلي لجميع التخصصات 🩺</h3>
+        <p>استشارة طبية في منزلك بشكل احترافي.</p>
       </div>
     </div>
   </section>
 
+  <!-- فورم التواصل -->
   <section id="contact">
     <h2>تواصل معنا</h2>
+    <form action="https://formspree.io/f/da4c40tienn" method="POST" class="contact-form">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
 
-    <form action="https://formspree.io/f/mayzqkvl" method="POST">
-      <label>الاسم</label>
-      <input type="text" name="name" required>
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required>
 
-      <label>البريد الإلكتروني</label>
-      <input type="email" name="email" required>
+      <label for="phone">رقم الهاتف:</label>
+      <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required>
 
-      <label>رقم الموبايل</label>
-      <input type="text" name="phone" required>
-
-      <label>الرسالة</label>
-      <textarea name="message" rows="4" required></textarea>
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" rows="4" required></textarea>
 
       <button type="submit">إرسال</button>
+      <p id="formMessage" style="display:none; color: green; margin-top: 10px;">شكراً! تم استلام رسالتك بنجاح.</p>
     </form>
   </section>
 
-  <section>
-    <h2>موقعنا على الخريطة</h2>
-    <iframe 
-      src="https://www.google.com/maps?q=المقطم الهضبة الوسطى شارع هادي جوهر&output=embed">
-    </iframe>
+  <!-- واتساب عائم -->
+  <a href="https://wa.me/201203473601" class="whatsapp-float" target="_blank">واتساب</a>
+
+  <!-- خريطة -->
+  <section id="map">
+    <h2>موقعنا</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d31.367!3d29.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458456!2sالمقطم!5e0!3m2!1sar!2seg!4v1610000000000!5m2!1sar!2seg" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
-</main>
+  <!-- الفوتر -->
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 راديولوجي إسكان</p>
+  </footer>
 
-<footer>
-  <p>© 2026 جميع الحقوق محفوظة – راديولوجي إسكان</p>
-</footer>
-
-<!-- زر واتساب عايم -->
-<a class="whatsapp-btn" href="https://wa.me/201203473601" target="_blank">
-  🟢 واتساب
-</a>
-
+  <script src="script.js"></script>
 </body>
 </html>

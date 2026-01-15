@@ -1,163 +1,144 @@
-/* ===== إعادة ضبط أساسي ===== */
-* {
+/* خطوط أساسية */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  background: #f5f5f5;
 }
 
-/* ===== جسم الصفحة ===== */
-body {
-  background-color: #f4f6f9;
-  line-height: 1.6;
-  text-align: center;
-  padding: 20px;
-}
-
-/* ===== الهيدر ===== */
 header {
-  background-color: #007bff;
-  color: white;
-  padding: 20px 0;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+header .logo img {
+  height: 60px;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 header nav ul li a {
-  color: white;
   text-decoration: none;
+  color: #222;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-  color: #ffdd57;
+#hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
 }
 
-/* ===== القسم الرئيسي ===== */
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+#hero .hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  opacity: 0.8;
 }
 
-/* ===== خدمات المركز ===== */
+#hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #services {
-  margin: 40px 0;
+  padding: 40px 20px;
+  background: #fff;
 }
 
 #services h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .service-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .service {
-  background-color: white;
-  padding: 20px;
+  background: #f0f0f0;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
   border-radius: 12px;
-  width: 260px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.service:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .service img {
   width: 80px;
-  margin-bottom: 15px;
-}
-
-.service h3 {
+  height: 80px;
+  object-fit: contain;
   margin-bottom: 10px;
-  color: #007bff;
 }
 
-.service p {
-  font-size: 14px;
-  color: #333;
-}
-
-/* ===== تواصل معنا ===== */
-#contact {
-  margin: 40px 0;
-  background-color: white;
-  padding: 25px;
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-#contact h2 {
-  margin-bottom: 20px;
-  color: #007bff;
+.contact-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
 }
 
-#contact input, 
-#contact textarea {
+.contact-form input, .contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 6px;
+  margin-top: 5px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 14px;
 }
 
-#contact button {
-  background-color: #007bff;
-  color: white;
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
   border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
+  background: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
 }
 
-#contact button:hover {
-  background-color: #0056b3;
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-#contact p {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-/* ===== الفوتر ===== */
 footer {
-  margin-top: 40px;
-  padding: 20px 0;
-  background-color: #007bff;
-  color: white;
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
 }
 
-/* ===== تصميم متجاوب للموبايل ===== */
 @media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
   .service-list {
     flex-direction: column;
     align-items: center;
