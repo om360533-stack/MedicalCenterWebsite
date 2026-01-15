@@ -92,6 +92,14 @@
     <p>جميع الحقوق محفوظة &copy; 2026 راديولوجي إسكان</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- جافاسكريبت الفورم -->
+  <script>
+    const form = document.querySelector(".contact-form");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", function(e){
+        formMessage.style.display = "block";
+    });
+  </script>
 </body>
 </html>
