@@ -1,6 +1,6 @@
-const form = document.querySelector(".contact-form");
-const formMessage = document.getElementById("formMessage");
-
-form.addEventListener("submit", function(e){
-    formMessage.style.display = "block";
-});
+setTimeout(function () {
+  var loader = document.getElementById("loader");
+  if (loader) {
+    loader.style.display = "none";
+  }
+}, 1000);
